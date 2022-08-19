@@ -87,7 +87,7 @@
 }
 
 .welcome{
-    height:100vh;
+    height:107vh;
     width:100%;
     background-color: white;
     position: relative;
@@ -180,7 +180,7 @@
 }
 
 .welcometext a{
-    width:30%;
+    width:35%;
     height:9%;
     border:3px solid rgb(1, 109, 1);
     color:rgb(1, 87, 30);

@@ -19,7 +19,7 @@ footer{
 }
 
 i{  
-    font-size: 50px;
+    font-size: 40px;
     color:rgb(27, 139, 5);
     background-color: rgba(255, 255, 255, 0.384);
 }
@@ -147,9 +147,9 @@ h3{
     height:25vh;
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 0;
+    column-gap: 10px;
 }
 
 .invite h3{
@@ -166,7 +166,7 @@ h3{
     justify-content: center;
     align-items: center;
     height:100%;
-    width:30%
+    width:22%
 }
 
 
@@ -190,10 +190,11 @@ h3{
 
 .invtext{
     position:relative;
-   width:90%;
+   width:70%;
 }
 
 .invtext h3{
     text-align: center;
     font-family: "content";
+    font-size: 22px;
 }
