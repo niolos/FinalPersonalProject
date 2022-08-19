@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'logo';
+    src: url(../app/fonts/Japanese2020-axanm.ttf);
+}
+
+@font-face {
+    font-family: 'content';
+    src: url(../app/fonts/HorobiRegular-VGOlz.ttf);
+}

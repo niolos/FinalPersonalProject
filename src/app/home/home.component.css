@@ -1,0 +1,205 @@
+.container{
+    height:85vh;
+    width:100vw;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing{
+    background:url("https://cdn.discordapp.com/attachments/300029742424260608/960537782705594378/41092125_2150341508573749_5654958489731072000_n.jpg") no-repeat;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.24);
+    height:100%;
+    width:100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .overlayImg{
+    width:80%;
+    height:100%;
+    position:relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap:17rem;
+}
+
+.overlay .overlayImg img{
+    height:32%;
+    transition:0.4s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.589);}
+
+
+.overlay .overlayImg img:hover{
+    transform: scale(1.3);
+    box-shadow: 3px 3px 15px -1px rgba(153, 153, 153, 0.658);
+}
+
+.parallax{
+    height:150vh;
+    width:100%;
+    position: relative;
+}
+
+.parallax .background{
+    width:100%;
+    display: flex;
+    position: relative;
+    height:50%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    padding: 2rem;
+    background-color: rgba(226, 226, 226, 0.281);
+
+}
+
+.background .soifon{
+    height:40%
+}
+
+.background .ichigo{
+    height:50%
+}
+
+
+
+.background h2{
+    font-family: "content";
+    font-size: 35px;
+    font-weight: bold;
+    color:rgb(0, 73, 0);
+}
+
+.welcome{
+    height:100vh;
+    width:100%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.welcome .bayonetta{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    transform: translate(-50%,-50%);
+    transform: rotateX(0deg);
+    height:75%;
+    transform: rotatey(180deg);
+}
+
+.welcome .divide{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:10%;
+    left:50%;
+    width:80%;
+}
+
+.bayoback{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transform: rotate(180deg);
+    right:0;
+    height:70%;
+    bottom:10%;
+
+}
+
+.welcometext h1{
+    font-family: "logo";
+    color:rgb(4, 97, 0);
+    cursor:default;
+    font-size: 37px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.welcometext{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+    height: 100%;
+    padding-top: 5%;
+    row-gap: 10px;
+}
+
+.welcometext p{
+    font-family: 'content';
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width:75%;
+    text-align: center;
+    line-height: 20px;
+    justify-content: center;
+}
+
+.text{
+    text-align: center;
+    width:80%;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    background-color: rgba(245, 245, 245, 0.623);
+    margin-bottom: 1.3rem;
+}
+
+.welcometext mat-divider{
+    width:50%;
+    border-top-width:3px;
+    border-color: rgb(4, 97, 0);
+}
+
+.welcometext a{
+    width:30%;
+    height:9%;
+    border:3px solid rgb(1, 109, 1);
+    color:rgb(1, 87, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: rgba(85, 224, 81, 0.507);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px;
+    transition:0.2s ease-in-out;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.66);
+}
+
+.welcometext a:hover{
+    background-color: rgba(16, 143, 12, 0.507);
+    color:rgb(41, 105, 63);
+
+}
+

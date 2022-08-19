@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'logo';
+    src: url(../fonts/Japanese2020-axanm.ttf);
+}
+
+header{
+    width:100vw;
+    height:15vh;
+    position: relative;
+    display: flex;
+    padding:1%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.38);
+    z-index: 2;
+}
+
+nav{
+    width:100%;
+    position:relative;
+    height:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    width:auto;
+    height:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "logo";
+    font-size: 20px;
+}
+
+
+.logo img{
+    height:80%;
+}
+
+
+ul{
+    position: relative;
+    display: flex;
+    column-gap: 5rem;
+}
+
+ul li{
+    font-family: "logo";
+}
+
+.log{
+    background-color: rgb(0, 163, 0);
+    color:white;
+    padding: 10px;
+    width:5.3rem;
+    border-radius:20px ;
+    text-align: center;
+    transition:0.6s ease;
+}
+
+.log:hover{
+     background-color: rgb(1, 70, 1);
+}
