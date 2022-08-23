@@ -1,0 +1,158 @@
+.con{
+    width:100%;
+    height:100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.sub{
+    border:1px solid rgba(117, 117, 117, 0.466);
+    width:60%;
+    height:80%;
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.64);
+}
+
+.formdesign{
+
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height: 100%;
+    flex-direction: column;
+    border-left: 1px solid rgb(190, 190, 190);
+    border-radius: 0px 10px 10px 0px;
+  
+}
+
+
+.image{
+    height:90%;
+    width:100%;
+    background: url("https://cdn.discordapp.com/attachments/885520208280825886/1011332591871332382/67ab0df8c602c750ba0efbbcb427808b.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 5;
+    background-position: inherit;
+    border-radius: 0px 0px 10px 0px;
+
+}
+
+.formdesign h3{
+    height:10%;
+    width:100%;
+    position: relative;
+    text-align: center;
+    background-color: rgba(249,59,27,255);
+    font-family: "logo";
+    margin: 0;
+    padding:10px;
+    color:rgb(255, 255, 255);
+    font-size: 23px;
+    border-radius: 0px 10px 0px 0px;
+}
+
+
+
+form{
+    width:50%;
+    height: 100%;
+    position: relative;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+
+
+.input-data{
+    height:40px;
+    width:90%;
+    position:relative;
+}
+
+
+.input-data input{
+    height:100%;
+    width:100%;
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 17px;
+    outline: none;
+}
+
+.input-data label{
+    position:absolute;
+    bottom: 10px;
+    left:0;
+    color:grey;
+    pointer-events:none;
+    transition:all 0.3s ease;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 14px;
+    color:rgb(10, 158, 146);
+}
+
+
+.underline{
+    position:absolute;
+    bottom:0px;
+    height:2px;
+    width:100%;
+}
+
+
+.underline::before{
+    position:absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    background:rgb(10, 158, 146);
+    transform:scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline::before,
+.input-data input:valid ~ .underline::before{
+    transform:scaleX(1)
+}
+
+form h1{
+    font-family: "logo";
+    color:rgba(249,59,27,255);
+    font-size: 30px;
+}
+
+input[type=date]{
+    color:grey
+}
+
+
+form button{
+    padding:8px 20px;
+    font-family: "logo";
+    border:none;
+    background: rgba(249,59,27,255);
+    border-radius: 10px;
+    cursor:pointer;
+    transition:all 0.3s ease;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.45);
+}
+
+form button:hover{
+    background: rgb(124, 30, 14);
+    color:white;
+}

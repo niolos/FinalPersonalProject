@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { SubscriptionComponent } from './subscription/subscription.component';
+import { PastEventsComponent } from './past-events/past-events.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import {MatDividerModule} from '@angular/material/divider';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SubscriptionComponent,
+    PastEventsComponent
   ],
   imports: [
     BrowserModule,
