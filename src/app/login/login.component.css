@@ -1,0 +1,182 @@
+.container{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.detail{
+    width:40%;
+    height:100%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, rgb(141,236,140) 0%, rgb(141,236,140) 11%,rgb(111,212,112) 11%, rgb(111,212,112) 24%,rgb(60,172,32) 24%, rgb(60,172,32) 29%,rgb(40,133,20) 29%, rgb(40,133,20) 33%,rgb(255,255,255) 33%, rgb(255,255,255) 100%);    border-right:1px solid silver;
+    overflow:hidden ;
+}
+
+.detail::after{
+    width:190px;
+    background-color: rgba(0, 128, 0, 0.822);
+    height:190px;
+    position:absolute;
+    content: '';
+    border-radius: 50%;
+    top:-50px;
+    right: -50px;
+}
+
+.detail::before{
+    width:150px;
+    background-color: rgba(0, 128, 0, 0.822);
+    height:150px;
+    position:absolute;
+    content: '';
+    border-radius: 50%;
+    bottom:-60px;
+    left: -50px;
+}
+
+form{
+    width:60%;
+    height:100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, rgba(164, 135, 221, 0.45) 0%, rgba(164, 135, 221, 0.45) 14%,rgba(140, 121, 196, 0.45) 14%, rgba(140, 121, 196, 0.45) 18%,rgba(92, 92, 145, 0.45) 18%, rgba(92, 92, 145, 0.45) 22%,rgba(188, 149, 246, 0.45) 22%, rgba(188, 149, 246, 0.45) 23%,rgba(20, 50, 70, 0.45) 23%, rgba(20, 50, 70, 0.45) 70%,rgba(44, 64, 95, 0.45) 70%, rgba(44, 64, 95, 0.45) 75%,rgba(116, 107, 171, 0.45) 75%, rgba(116, 107, 171, 0.45) 88%,rgba(68, 78, 120, 0.45) 88%, rgba(68, 78, 120, 0.45) 100%),linear-gradient(135deg, rgb(50,201,16),rgb(255,255,255));
+}
+
+.info{
+    border-radius: 10px;
+    border: 1px solid silver;
+    width:50%;
+    height:70%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.23);
+    background-color: white;
+}
+
+.info h1{
+    width:100%;
+    text-align: center;
+
+}
+
+.inputCon{
+    display:flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.logo{
+    width:100%;
+    position: relative;
+    height:30%;
+    font-family: "logo";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color:rgb(49, 49, 49);
+
+}
+
+.logo img{
+    height:40%;
+}
+
+
+.detail h1{
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width:50%;
+    text-align: center;
+    font-size: 30px;
+    color:rgb(49, 49, 49);
+}
+
+.input-data{
+    height:40px;
+    width:90%;
+    position:relative;
+}
+
+
+.input-data input{
+    height:100%;
+    width:100%;
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 17px;
+    outline: none;
+    
+}
+
+.input-data label{
+    position:absolute;
+    bottom: 10px;
+    left:0;
+    color:grey;
+    pointer-events:none;
+    transition:all 0.3s ease;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+    transform: translateY(-20px);
+    font-size: 14px;
+    color:rgb(10, 158, 146);
+}
+
+
+.underline{
+    position:absolute;
+    bottom:0px;
+    height:2px;
+    width:100%;
+}
+
+
+.underline::before{
+    position:absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    background:rgb(10, 158, 146);
+    transform:scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline::before,
+.input-data input:valid ~ .underline::before{
+    transform:scaleX(1)
+}
+
+
+button{
+    margin-top: 50px;
+    padding: 10px 30px 10px 30px;
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(71, 206, 71);
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(11, 110, 11);
+
+}

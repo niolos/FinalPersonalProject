@@ -8,4 +8,11 @@ import { Component , ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'FinalPersonalProject';
+  
+  ngOnInit(): void {
+  }
+
+  onActive(){
+    window.scroll(0, 0);
+  }
 }

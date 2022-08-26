@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { SubscriptionComponent } from './subscription/subscription.component';
 import { PastEventsComponent } from './past-events/past-events.component';
+import { ComingEventsComponent } from './coming-events/coming-events.component';
+import { AboutComponent } from './about/about.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { PastEventsComponent } from './past-events/past-events.component';
     NavbarComponent,
     FooterComponent,
     SubscriptionComponent,
-    PastEventsComponent
+    PastEventsComponent,
+    ComingEventsComponent,
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
