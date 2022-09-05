@@ -1,26 +1,28 @@
 <div class="container">
     <div class="detail">
         <div class="logo">
-            <img src="https://cdn.discordapp.com/attachments/300029742424260608/960539228461228112/271180995_3083180495289841_8136281419341816088_n-removebg-preview.png" alt="">ANIME NERDS OF JAMAICA
+            <a routerLink="/" routerLinkActive="active">
+                <img src="https://cdn.discordapp.com/attachments/300029742424260608/960539228461228112/271180995_3083180495289841_8136281419341816088_n-removebg-preview.png" alt="">ANIME NERDS OF JAMAICA
+            </a>
         </div>
         <h1>WELCOME BACK ADMINS!</h1>    
     </div>
-    <form action="">
+    <form [formGroup]="logData">
         <div class="info">
             <h1>SIGN IN</h1>
             <div class="inputCon">
                 <div class="input-data">
-                    <input type="text" required>
+                    <input type="text" formControlName="userName" required>
                     <div class="underline"></div>
                     <label>User Name</label>
                 </div>
                 <div class="input-data">
-                    <input type="text" required>
+                    <input type="password" formControlName="password" required>
                     <div class="underline"></div>
                     <label>Password</label>
                 </div>
             </div>
-            <button type="submit"> Login</button>
+            <button type="submit" (click)="OnSubmit()"> Login</button>
 
         </div>
     </form>

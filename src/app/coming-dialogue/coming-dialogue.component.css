@@ -1,0 +1,56 @@
+.dialogCon{
+    height:100%;
+    width:100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: radial-gradient(circle at bottom left, rgba(185, 101, 3,0.05) 0%, rgba(185, 101, 3,0.05) 50%,rgba(250, 212, 23,0.05) 50%, rgba(250, 212, 23,0.05) 100%),radial-gradient(circle at top right, rgba(252, 78, 169,0.05) 0%, rgba(252, 78, 169,0.05) 50%,rgba(83, 28, 146,0.05) 50%, rgba(83, 28, 146,0.05) 100%),radial-gradient(circle at center left, rgba(185, 135, 93,0.05) 0%, rgba(185, 135, 93,0.05) 50%,rgba(144, 5, 38,0.05) 50%, rgba(144, 5, 38,0.05) 100%),linear-gradient(90deg, rgb(66, 192, 39),rgb(20, 215, 67));
+}
+
+.dialogCon img{
+    height:30%;
+}
+
+.dialogCon i{
+    position: absolute;
+    top:2%;
+    left:94%;
+    font-size: 20px;
+    cursor: pointer;
+    color:rgb(236, 253, 1);
+    font-weight: bold;
+    transition:all 0.3s ease
+}
+
+.dialogCon i:hover{
+    color:rgb(151, 161, 6);
+}
+
+.des{
+    position: relative;
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 5px;
+}
+
+
+h2{
+    font-family: "logo";
+    letter-spacing: 2px;
+    color:white;
+    font-size: 26px;
+    text-align: center;
+}
+
+h3{
+    font-family: "logo";
+    color:white
+}
+

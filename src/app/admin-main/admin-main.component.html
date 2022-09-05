@@ -1,0 +1,33 @@
+<div class="container">
+    <app-sidenav class="sidenav"></app-sidenav>
+    <div class="content">
+        <app-heading></app-heading>
+        <div class="tablecon">
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Alias</th>
+                    <th>Phone Number</th>
+                    <th>Date of Birth</th>
+                    <th colspan="2">Action</th>
+                </tr>
+                <tr *ngFor="let subscriber of subscriber">
+                    <td>{{subscriber.fName}}</td>
+                    <td>{{subscriber.lName}}</td>
+                    <td>{{subscriber.email}}</td>
+                    <td>{{subscriber.alias}}</td>
+                    <td>{{subscriber.phoneNumber}}</td>
+                    <td>{{subscriber.dob |date}}</td>
+                    <td><i class="fa-solid fa-trash-can" (click)="deleteubScriber(subscriber._id)"></i></td>
+                    <td>
+                        <a routerLink="/updateSub/{{subscriber._id}}" routerLinkActive="active">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

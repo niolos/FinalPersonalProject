@@ -1,0 +1,18 @@
+.header{
+    width:100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:15%;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.75);
+    border-bottom: 1px solid silver;
+}
+
+.header h1{
+    font-family: "logo";
+    color:green;
+    letter-spacing: 2px;
+    font-size: 30px;
+}

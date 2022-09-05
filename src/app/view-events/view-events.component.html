@@ -1,0 +1,33 @@
+<div class="container">
+    <app-sidenav class="sidenav"></app-sidenav>
+    <div class="content">
+        <app-heading></app-heading>
+        <div class="tablecon">
+            <table>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Cost</th>
+                    <th>Description</th>
+                    <th>Event Date</th>
+                    <th>Location</th>
+                    <th>Event Status</th>
+                    <th colspan="2">Action</th>
+                </tr>
+                <tr *ngFor="let event of events">
+                    <td>{{event.eventName}}</td>
+                    <td>{{event.cost}}</td>
+                    <td>{{event.description}}</td>
+                    <td>{{event.eventDate}}</td>
+                    <td>{{event.location}}</td>
+                    <td>{{event.status}}</td>
+                    <td><i class="fa-solid fa-trash-can" (click)="deleteubScriber(event._id)"></i></td>
+                    <td>
+                        <a routerLink="/updateEvent/{{event._id}}" routerLinkActive="active">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

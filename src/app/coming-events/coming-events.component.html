@@ -7,26 +7,15 @@
 </div>
 <div class="container">
     <div class="events">
-        <div class="info">
-            <img src="https://cdn.discordapp.com/attachments/300029742424260608/962567229797433405/download.jpg" alt="">
+        <div class="info" *ngFor="let event of events; let x=index">
+            <img src="http://localhost:4000/{{event.eventImg}}" alt="">
             <div class="content">
-                <p>Event Name:Purge</p>
-                <p> Date: 02/10/2020</p>
-                <p>Location: Kingston</p>
+                <p>Event Name:{{event.eventName}}</p>
+                <p> Date: {{event.eventDate}}</p>
+                <p>Location: {{event.location}}</p>
             </div>
             <div class="more">
-                <p>View More</p>
-            </div>
-        </div>
-        <div class="info">
-            <img src="https://cdn.discordapp.com/attachments/300029742424260608/962567229797433405/download.jpg" alt="">
-            <div class="content">
-                <p>Event Name:Purge</p>
-                <p> Date: 02/10/2020</p>
-                <p>Location: Kingston</p>
-            </div>
-            <div class="more">
-                <p>View More</p>
+                <p (click)="openDialog(x)">View More</p>
             </div>
         </div>
     </div>

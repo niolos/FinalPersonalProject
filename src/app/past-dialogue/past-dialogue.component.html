@@ -1,0 +1,15 @@
+<div class="dialogCon">
+    <h2>{{data.pastEventArray[data.arraySearch].eventName | uppercase}}</h2>
+
+    <img [src]="'http://localhost:4000/'+data.pastEventArray[data.arraySearch].eventImg" alt="">
+    <div class="eventDetails">
+        <h3>Date: {{data.pastEventArray[data.arraySearch].eventDate | uppercase}}</h3>
+        <h3>Admission: {{data.pastEventArray[data.arraySearch].cost | currency}}</h3>
+        <h3>Location: {{data.pastEventArray[data.arraySearch].location}}</h3>
+        <div class="des">      
+          <h3>Description:</h3> <h3>{{data.pastEventArray[data.arraySearch].description}}</h3>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <i class="fa-solid fa-xmark"  mat-dialog-close></i>
+</div>

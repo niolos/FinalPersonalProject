@@ -87,6 +87,8 @@
 
 .info img{
     height:100%;
+    max-width: 80px;
+    min-width: 80px;
 }
 
 .notif{

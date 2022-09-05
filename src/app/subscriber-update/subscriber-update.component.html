@@ -1,0 +1,48 @@
+<div class="container">
+    <app-sidenav class="sidenav"></app-sidenav>
+    <div class="content">
+        <app-heading></app-heading>
+        <div class="formcon">
+            <div class="sub">
+                <form *ngIf="createSubscriber" [formGroup]="createSubscriber">
+                    <h1>Sign Up</h1>
+
+                    <div class="input-data">
+                        <input type="text" formControlName="fName" required >
+                        <div class="underline"></div>
+                        <label>First Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" formControlName="lName" required>
+                        <div class="underline"></div>
+                        <label>Last Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" formControlName="alias" required>
+                        <div class="underline"></div>
+                        <label>Alias</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" formControlName="email" required>
+                        <div class="underline"></div>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="number" formControlName="phoneNumber" required>
+                        <div class="underline"></div>
+                        <label>Phone Number</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="date" formControlName="dob" required>
+                        <div class="underline"></div>
+                    </div>
+                    <button type="submit" (click)="newSubscriber()">Register</button>
+                </form>
+                <div class="formdesign">
+                    <h3>Add Subscriber</h3>
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

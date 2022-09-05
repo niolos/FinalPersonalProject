@@ -2,39 +2,39 @@
 
 <div class="con">
     <div class="sub">
-        <form action="">
+        <form [formGroup]="createSubscriber">
             <h1>Sign Up</h1>
 
             <div class="input-data">
-                <input type="text" required>
+                <input type="text" formControlName="fName" required>
                 <div class="underline"></div>
                 <label>First Name</label>
             </div>
             <div class="input-data">
-                <input type="text" required>
+                <input type="text" formControlName="lName" required>
                 <div class="underline"></div>
                 <label>Last Name</label>
             </div>
             <div class="input-data">
-                <input type="text" required>
+                <input type="text" formControlName="alias" required>
                 <div class="underline"></div>
                 <label>Alias</label>
             </div>
             <div class="input-data">
-                <input type="text" required>
+                <input type="text" formControlName="email" required>
                 <div class="underline"></div>
                 <label>Email</label>
             </div>
             <div class="input-data">
-                <input type="number" required>
+                <input type="number" formControlName="phoneNumber" required>
                 <div class="underline"></div>
                 <label>Phone Number</label>
             </div>
             <div class="input-data">
-                <input type="date" required>
+                <input type="date" formControlName="dob" required>
                 <div class="underline"></div>
             </div>
-            <button type="submit">Register</button>
+            <button type="submit" (click)="newSubscriber()">Register</button>
         </form>
         <div class="formdesign">
             <h3>Subscribe to Our News Feed</h3>
