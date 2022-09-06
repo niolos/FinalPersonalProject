@@ -19,7 +19,6 @@ export class ComingEventsComponent implements OnInit {
   getAllPastEvents():void{
     this.CominEventsService.getPastEvents().subscribe(getEvents=>{
       this.events = getEvents
-      console.log(`this Event is ${JSON.stringify(this.events)}`)
     })
   }
 
