@@ -22,7 +22,6 @@ export class EventUpdateComponent implements OnInit {
 
   formatDate(){
     this.createEvent?.get("eventDate")?.setValue(this.datePipe.transform(this.createEvent?.get("eventDate")?.value,"yyyy-MM-dd"))
-    console.log(this.datePipe.transform(this.createEvent?.get("eventDate")?.value));
 
    }
 
@@ -46,7 +45,6 @@ export class EventUpdateComponent implements OnInit {
   }
 
   file(event:any){
-    console.log(event.target.files[0]);
     // this.createEvent.eventImg = event.target.files[0];
     this.createEvent.controls['eventImg'].setValue(event.target.files[0]) 
   }

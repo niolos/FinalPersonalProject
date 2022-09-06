@@ -20,7 +20,6 @@ export class AdminMainComponent implements OnInit {
   getAllSubscribers():void{
     this.subscription.getSubscribers().subscribe(getSubscribers=>{
       this.subscriber = getSubscribers
-      console.log(`this Students is ${JSON.stringify(this.subscriber)}`)
     })
   }
 

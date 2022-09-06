@@ -19,7 +19,6 @@ export class SubscriberUpdateComponent implements OnInit {
 
   formatDate(){
   this.createSubscriber?.get("dob")?.setValue(this.datePipe.transform(this.createSubscriber?.get("dob")?.value,"yyyy-MM-dd"))
-  console.log(this.datePipe.transform(this.createSubscriber?.get("dob")?.value));
 
   }
    

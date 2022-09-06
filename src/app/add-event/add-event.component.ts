@@ -52,7 +52,6 @@ export class AddEventComponent implements OnInit {
   }
 
   file(event:any){
-    console.log(event.target.files[0]);
     // this.createEvent.eventImg = event.target.files[0];
     this.createEvent.controls['eventImg'].setValue(event.target.files[0]) 
   }

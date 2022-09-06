@@ -18,7 +18,6 @@ export class ViewEventsComponent implements OnInit {
   getAllEvents():void{
     this.eventService.getEvents().subscribe(getEvents=>{
       this.events = getEvents
-      console.log(`this Students is ${JSON.stringify(this.events)}`)
     })
   }
 
