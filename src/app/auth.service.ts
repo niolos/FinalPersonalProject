@@ -19,12 +19,6 @@ export class AuthService {
 
   checkLog(formData:any): Observable<authResponse<Admins>>{
     return this.http.post<authResponse<Admins>>(`${this.REST_API_URL}`,formData)
-    // .pipe(
-    //   tap(newEvent =>{
-    //     console.log(`this Event = ${newEvent}`);
-      //  }),
-      //  catchError(error => of(new Admins()))
-    // )
   }
 
 }
