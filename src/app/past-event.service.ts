@@ -3,13 +3,14 @@ import { Injectable } from '@angular/core';
 import { Events } from './models/events';
 import { Observable, of, Subscriber } from 'rxjs';
 import { catchError,map,tap } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PastEventService {
 
-  private REST_API_URL = 'http://localhost:4000/past'
+  private REST_API_URL = environment.API_URL+'/past'
 
   private HTTP_HEADER = {
     headers: new HttpHeaders({'content-type': 'application/json'})

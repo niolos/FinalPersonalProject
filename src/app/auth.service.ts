@@ -4,13 +4,14 @@ import { Admins } from './models/admins';
 import { Observable, of, Subscriber } from 'rxjs';
 import { catchError,map,tap } from 'rxjs';
 import { authResponse } from './models/authentication';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
   
-  private REST_API_URL = 'http://localhost:4000/login'
+  private REST_API_URL = environment.API_URL+'/login'
 
   private HTTP_HEADER = {
     headers: new HttpHeaders({'content-type': 'application/json'})
