@@ -7,6 +7,17 @@
     align-items:center ;
 }
 
+.date{
+    width:80%;
+    height:18px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.date:hover{
+    cursor:pointer
+}
+
 .sub{
     border:1px solid rgba(117, 117, 117, 0.466);
     width:60%;
